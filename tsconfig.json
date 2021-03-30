@@ -17,10 +17,11 @@
       "noUnusedParameters": true,
       "noImplicitReturns": true,
       "noFallthroughCasesInSwitch": true,
-      "allowSyntheticDefaultImports": false,
+      "allowSyntheticDefaultImports": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "forceConsistentCasingInFileNames":true,
+      "esModuleInterop": true,
       "skipLibCheck": true,
       "baseUrl": ".",
       "rootDir": "src"
