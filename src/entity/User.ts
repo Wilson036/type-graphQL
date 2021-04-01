@@ -6,7 +6,7 @@ import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
 export class User extends BaseEntity {
   @Field(() => ID)
   @PrimaryGeneratedColumn()
-  id: Number;
+  id: number;
 
   @Field()
   @Column()
@@ -27,4 +27,7 @@ export class User extends BaseEntity {
 
   @Column()
   password: string;
+
+  @Column('bool')
+  confirmed: boolean;
 }
