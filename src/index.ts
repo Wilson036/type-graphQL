@@ -20,7 +20,7 @@ const main = async () => {
 
   const applloServer = new ApolloServer({
     schema,
-    context: ({ req }: any) => ({ req }),
+    context: ({ req, res }: any) => ({ req, res }),
   });
   const app = Express();
   const RedisStore = connectRedis(session);
